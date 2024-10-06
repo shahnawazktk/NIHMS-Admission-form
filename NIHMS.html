@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIHMS Admission Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .header h1 {
+            margin: 10px 0;
+            color: #333;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .photo-box {
+            width: 150px;
+            height: 180px;
+            border: 1px dashed #999;
+            float: right;
+            margin-top: -60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f9f9f9;
+        }
+
+        .form-number {
+            position: absolute;
+            right: calc(50% - 350px);
+            top: 40px;
+            padding: 5px 15px;
+            border: 1px solid #000;
+        }
+
+        .program-selection {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .form-group {
+            margin: 15px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .documents {
+            margin: 20px 0;
+        }
+
+        .documents h3 {
+            margin-bottom: 10px;
+        }
+
+        .documents ul {
+            list-style-position: inside;
+            margin-left: 20px;
+        }
+
+        .signatures {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .signature-line {
+            width: 200px;
+            border-top: 1px solid #000;
+            margin-top: 20px;
+            text-align: center;
+        }
+       
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            
+            <h1>NATIONAL INSTITUTE OF HEALTH & MANAGEMENT SCIENCES</h1>
+            <h2>ADMISSION FORM</h2>
+        </div>
+
+        <div class="photo-box">
+            Photo
+        </div>
+
+        <form>
+            <img src="img/school.png/100/100" alt="NIHMS Logo">
+            <div class="program-selection">
+                <label><input type="radio" name="program" value="bs-dental"> BS Dental</label>
+                <label><input type="radio" name="program" value="bs-health"> BS Health</label>
+            </div>
+
+            <h3 class="text-center">Applicant's Data</h3>
+            <div class="form-group">
+                <label>Applicant's Name:</label>
+                <input type="text" name="applicant_name">
+            </div>
+
+            <div class="form-group">
+                <label>Date of Birth:</label>
+                <input type="date" name="dob">
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Marital Status:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="marital_status" value="married"> Married</label>
+                    <label><input type="radio" name="marital_status" value="unmarried"> Unmarried</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>CNIC/Form B #:</label>
+                <input type="text" name="cnic">
+            </div>
+
+            <div class="form-group">
+                <label>Permanent Address:</label>
+                <input type="text" name="address">
+            </div>
+
+            <div class="form-group">
+                <label>District/Agency:</label>
+                <input type="text" name="district">
+            </div>
+
+            <div class="form-group">
+                <label>Nationality:</label>
+                <input type="text" name="nationality">
+            </div>
+
+            <div class="form-group">
+                <label>Cell # 1:</label>
+                <input type="text" name="cell1">
+            </div>
+
+            <div class="form-group">
+                <label>Cell # 2:</label>
+                <input type="text" name="cell2">
+            </div>
+
+            <h3>Father's / Guardian's Data</h3>
+            <div class="form-group">
+                <label>Father's Name:</label>
+                <input type="text" name="father_name">
+            </div>
+
+            <div class="form-group">
+                <label>CNIC #:</label>
+                <input type="text" name="father_cnic">
+            </div>
+
+            <div class="form-group">
+                <label>Father's Profession:</label>
+                <input type="text" name="father_profession">
+            </div>
+
+            <div class="form-group">
+                <label>Cell #:</label>
+                <input type="text" name="father_cell">
+            </div>
+
+            <h3>In Case of Emergency</h3>
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="emergency_name">
+            </div>
+
+            <div class="form-group">
+                <label>Contact #:</label>
+                <input type="text" name="emergency_contact">
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Year</th>
+                        <th>Name of Board</th>
+                        <th>Roll No.</th>
+                        <th>Marks Obt.</th>
+                        <th>Total Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>F.Sc (Pre Med) Or Equivalent</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>SSC (Science) Or Equivalent</td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="documents">
+                <h3>Documents to be attached for BS Program</h3>
+                <ul>
+                    <li>Recent attested Passport Size Photographs</li>
+                    <li>Provisional Character Certificate (2 copies duly attested)</li>
+                    <li>SSC Detail Marks Sheet (2 copies duly attested)</li>
+                    <li>HSSC Detail Marks Sheet (2 copies duly attested)</li>
+                    <li>Migration Certificate (if needed)</li>
+                    <li>Equivalency Certificate (if needed)</li>
+                    <li>Applicant's and Father's/Guardian's CNIC</li>
+                </ul>
+            </div>
+
+            <div class="signatures">
+                <div class="signature-line">
+                    <p>Signature of the Candidate</p>
+                </div>
+                <div class="signature-line">
+                    <p>Signature of Father/Guardian</p>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
