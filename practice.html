@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+        .logo {
+            max-width: 150px; /* Set the desired size for the logo */
+            margin-bottom: 20px; /* Adds space below the logo */
+        }
+
+        body
+{
+  background-color:#f5f5f5;
+}
+.imagePreview {
+    width: 100%;
+    height: 180px;
+    background-position: center center;
+  background:url(http://cliquecities.com/assets/no-image-e3699ae23f866f6cbdf8ba2443ee5c4e.jpg);
+  background-color:#fff;
+    background-size: cover;
+  background-repeat:no-repeat;
+    display: inline-block;
+  box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+}
+.btn-primary
+{
+  display:block;
+  border-radius:0px;
+  box-shadow:0px 4px 6px 2px rgba(0,0,0,0.2);
+  margin-top:-5px;
+}
+.imgUp
+{
+  margin-bottom:15px;
+}
+.del
+{
+  position:absolute;
+  top:0px;
+  right:15px;
+  width:30px;
+  height:30px;
+  text-align:end;
+  line-height:30px;
+  background-color:rgba(255,255,255,0.6);
+  cursor:pointer;
+}
+.imgAdd
+{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background-color:#4bd7ef;
+  color:#fff;
+  box-shadow:0px 0px 2px 1px rgba(0,0,0,0.2);
+  text-align:center;
+  line-height:30px;
+  margin-top:0px;
+  cursor:pointer;
+  font-size:15px;
+}
+img{
+  max-width:180px;
+}
+input[type=file]{
+padding:10px;
+background:#2d2d2d;}
+
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+   
+    </style>
+</head>
+
+<body>
+<div class="container mt-5">
+    <h1 class="text-center">NTIONAL INSTITUTE OF HEALTH & MANAGEMENT SCIENCE</h1>
+    
+        <br><div class="container ">
+            <div class="text-start">
+                <h2 class="text-center">Admission Form</h2>
+                <img src="img/school.png" alt="Institute Logo" class="logo"> <!-- Replace with your logo file -->
+            </div>
+            <div class="container">
+                <div class="text-end">
+                    <h4>Preview Image Before Upload</h4>
+                    <input type="file" id="imageInput">
+                    <br>
+                    <img id="previewImage" alt="Preview" style="max-width: 200px; max-height: 200px;">
+                </div>
+            </div>
+            
+          
+    <form>
+        <!-- Program Options -->
+         
+            <div class="mb-3">
+                <label class="form-label">Select Program:</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="program" id="bsDental" value="BS Dental">
+                    <label class="form-check-label" for="bsDental">BS Dental</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="program" id="bsSurgical" value="BS Surgical">
+                    <label class="form-check-label" for="bsSurgical">BS Surgical</label>
+                </div>
+                <!-- Add other program options similarly -->
+                <h3 class="text-center">Applicant's Data</h3>
+            </div>
+    
+            <!-- Applicant Data -->
+           
+        
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="applicantName" class="form-label">Applicant's Name</label>
+                <input type="text" class="form-control" id="applicantName" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="dob" class="form-label">Date of Birth</label>
+                <input type="date" class="form-control" id="dob" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="gender" class="form-label">Gender</label><br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="fatherCnic" class="form-label">CNIC / Form B#</label>
+                <input type="text" class="form-control" id="fatherCnic" required>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="mb-3">
+            <label for="permanentAddress" class="form-label">Permanent Address</label>
+            <textarea class="form-control" id="permanentAddress" rows="2"></textarea>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="Distt" class="form-label">Distt/Agency</label>
+                <input type="text" class="form-control" id="Distt" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="nationality" class="form-label">Nationality</label>
+                <input type="text" class="form-control" id="nationality" required>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="fatherCnic" class="form-label">Phone Number #1</label>
+                <input type="text" class="form-control" id="fatherCnic" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="fatherCnic" class="form-label">Phone Number #2</label>
+                <input type="text" class="form-control" id="fatherCnic" required>
+            </div>
+        </div>
+        
+
+        <!-- Father's Data -->
+        <h5 class="text-center">Father's / Guardian's Data</h5>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="fatherName" class="form-label">Father's Name</label>
+                <input type="text" class="form-control" id="fatherName" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="fatherCnic" class="form-label">Father's CNIC</label>
+                <input type="text" class="form-control" id="fatherCnic" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="fatherCnic" class="form-label">Father's Profession</label>
+                <input type="text" class="form-control" id="fatherCnic" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="fatherCnic" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="fatherCnic" required>
+            </div>
+        </div>
+
+        <!-- Emergency Contact -->
+        <h5 class="text-center">In Case of Emergency</h5>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="emergencyName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="emergencyName" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="emergencyContact" class="form-label">Contact #</label>
+                <input type="text" class="form-control" id="emergencyContact" required>
+            </div>
+        </div>
+
+        <!-- Qualification -->
+        <h5 class="text-center">Qualification</h5>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Year</th>
+                    <th>Name of Board</th>
+                    <th>Roll No</th>
+                    <th>Marks Obtained</th>
+                    <th>Total Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>F.Sc (Pre Med)</td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>SSC (Science)</td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row">
+            <label for="Signature" class="form-label">Signature of the Condidate___________________</label>
+            <div class="row text-end" >
+                <label for="Signature" class="form-label">Signature of the Father_______________________</label>
+            </div>
+        </div>
+        -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    
+        <h2 class="text-center">NTIONAL INSTITUTE OF HEALTH & MANAGEMENT SCIENCE</h2>
+        <h3 class="text-center">Declartion of Applicant </h3>
+        <ol>
+            <li> I declare that all particulars and Information given in this application is correct to the best of my knowledge and bellef.</li>
+            <li> I understand to abide by all the rules and regulations of the regarding academic institute
+            
+                examination and attendance, technical training and discipline.</li>
+            <li> I undertake to accept all the decision of Principal, Managing committee to be final and irrevocable.</li>
+            <li> I declare that I have not been expelled from any institution on disciplinary or academic grounds.</li>
+            <div class="row">
+                <label for="date" class="form-label">Date___________________</label>
+                <div class="row text-end" >
+                    <label for="Signature" class="form-label">Applicant Signature_______________________</label>
+                </div>
+            </div>
+        </ol>
+        <h3 class="text-center">Declartion by the Parent/Guardian </h3>
+        <ol>
+            <li>I have read and understood the information and declaration given by my child/ward and declare that the information is correct to the best of my knowledge and belief. I hereby undertake to abide by all the provisions of the declaration given by him/her.</li>
+            <li>I will not hold the college responsible for any accident resulting in any kind of injury to my chlid/ward during his/her stay in the institute or hostel.</li>
+            <li>I have read the Institute rules, regulations, Information's and responsibility of the parents and hereby undertake to accept to abide by the same in letter and spirit.</li>
+            <li>I will clear any outstanding dues/fee etc, from the institute in which my children/ward(s) is/are studying. before the sending of forms for registration or examination.</li>
+            <li>I accept that after admission of my child in the institute, he/she will apply for migration to another Institute according to the rules of regulator body. </li>
+            <li>I undertake to claim refund of admission and tuition fee as per institute fee refund policy.</li>
+            <li></li>
+            <div class="row">
+                
+                <label for="date" class="form-label">Date___________________</label>
+                <div class="row text-end" >
+                    <label for="Signature" class="form-label">Parent/Guardian Signature_______________________</label>
+                </div>
+            </div>
+        </ol>
+        -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        <h2 class="text-center">NTIONAL INSTITUTE OF HEALTH & MANAGEMENT SCIENCE</h2>
+        <h3 class="text-center">UNDERTAKING/AGREEMENT </h3>
+        <h3 class="text-center">EVERY STUDENT SHALL GIVE THE FOLLOWING UNDERTAKING
+        </h3>
+        <div class="row">
+                
+            <label for="text" class="form-label">I Mr./Miss/Mrs.  _________________________son/daughter/ wife of  ____________________________________</label>
+            <label for="text" class="form-label">Resident of____________________________________________________________________________________</label>
+        </div>
+        <p>Do hereby solemnly undertake to abide by the following:-</p>
+        <ol>
+            <li>That I have read the prospectus of NHIMS, Peshawar and hereby agree to confirm to all provisions of the statues of the Institute or statutes and rules as may hereafter be framed by the appropriate authorities.</li>
+            <li>That the information furnished in, and document attached with the application form are correct, and I fully understand that at any time during course of study, if it is found that any information is in-correct or any document produced at the time of admission are false, which would have rendered me ineligible for admission under the rules, my name shall immediately be struck off from the institute roll.</li>
+            <li>That I shall, in case my name is struck off under clause (ii) above will not entitle me to claim refund of any fee paid by me.</li>
+            <li>That I shall have minimum attendance 75 percent, diligently apply myself to acquire and develop the skill necessary for the practice and advancement of my study in order to qualify for examination.</li>
+            <li>That I shall maintain identity as a student of Institution by display Identity card and wearing College uniform. I shall participate full whole-heartedly in curricular and extracurricular activities.</li>
+            <li>That I will not indulge in politics of any type and will not be a member of any political party/ organization/ students Federation and holding a gathering, meeting or taking out procession in the institute, I understand that my failure to observe this clause of undertaking would result in cancellation of my admission/ expulsion from the institute</li>
+            <li>That in any dispute with students, teachers and employees of the institute I shall accept the judgment of the committee constituted by the principal for decision of settlement of the wrong doers.</li>
+            <li>Further I do hereby solemnly undertake to refrain from:-</li>
+            <li type="a">Doing anything which may cause injury or insult to Principal, teachers and other staff of Institution.</li>
+            <li type="b">Holding a gathering meeting or taking out procession in any part of institute other than areas Specified for the purpose and I shall refrain from all kind of unfair means in examination.</li>
+            <li type="c">Allowing or abetting the entry to the premises of the institute of expelled students, anti-Social elements or other whose presence in the institution could cause conflict amongst the students.</li>
+            <li type="d">Bringing into the institute, consuming or encouraging consumption of alcoholic products, drugs and narcotics and indulging in acts of moral turpitude.</li>
+            <li type="e">Bringing or keeping any type of weapons within the College premises.</li>
+            <li type="f">Using or occupying any room or part of any building of the institution without lawful authority.</li>
+            <li type="g">Damaging any institute property including building, equipments, vehicles etc. h. Indulging in any violent or any other unsuitable activities even outside the Institute which may bring bad name to the institute.</li>
+            <li type="h">All such acts and deeds as might bring disgrace and bad name to the institute. In case I am reported to be guilty/ involved in any of the aforesaid activities during my stay in this institute, the institute authorities can rusticate me from the institute temporarily or expel me permanently. I will not try to create law and orders situation or instigate the students of the institute or of any other institution against the action taken by the institute and I will not go to any court of law, In case of my expulsion from institute.</li>
+            <li type="I"> I shall pay the tuition fee, exam fee and/or other charges of the college regularly prior to the academic end of the semester or annual.</li>
+            <li type="II">I shall produce the migration certificate within the prescribed period if demanded</li>
+            <li type="III">Absence from the class without any valid reason/prior permission will result in a fine of Rs. 50/- per day.</li>
+            <li type="IV">The institute does not accept any liability or responsibility for any failure or delay in performance due to any cause beyond its control such as fire, natural disaster, power failure, riots, political interest or acts of public authorities etc.</li>
+            <li type="V">Fee refund policy is under:</li>
+        
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Percentage of "Tuition fee" Refund</th>
+                        <th>Timeline For Semester System</th>
+                        <th>Timeline For Annual System</th>
+                        
+                    </tr>
+                    <tr>
+                        <th>Full Refund (100%)</th>
+                        <th>Up to 07 days of convene of classes</th>
+                        <th>Up to 15 days of convene of classes</th>
+                        
+                    </tr>
+                    <tr>
+                        <th>Full Refund (50%)</th>
+                        <th>From 08 to 15 days of convene of classes </th>
+                        <th>From 16 to 30 days of convene of classes</th>
+                        
+                    </tr>
+                    <tr>
+                        <th>No Fee Refund (0 %)</th>
+                        <th>From 16 days of convene of classes</th>
+                        <th>From 31 days of convene of classes</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    
+                </tbody>
+            </table>
+
+            
+        </ol>
+        <ul>
+            <li>In Case of Cancellation of Admission From any discipline, only Security Is refundable</li>
+            <li>uition Fee would be refunded as per the criteria mentioned in the table above</li>
+            <li>Admission fee once deposited will not be refundable in any case.</li>
+            <p>I will stick to the above mentioned affidavit/undertaking of NiHMS, Peshawar which will be binding on me and also that I or my said son/daughter/ward would not challenge the expulsion order in any judicial forum. He/She will comply by the rules and regulation of the KUM/Medical Faculty KP/Training Hospitals and other instructions, notified to him by NIHMS, time to time. Violation of the said renders him/her llable to strict disciplinary action such as heavy fine or expulsion from NiHMS or both.</p>
+        </ul>
+        ------------------------------------------                                                                                                          ----------------------------------
+        
+        <div class="row">
+            
+            <label for="Signature" class="form-label">Applicant Signature_______________________</label>
+            <div class="row text-end" >
+                <label for="Signature" class="form-label">Parent/Guardian Signature_______________________</label>
+            </div>
+        </div>
+        
+        <div class="row">
+            <label for="date" class="form-label">Date___________________</label>
+            
+            <div class="row text-end" >
+                <label for="date" class="form-label">Date___________________</label>
+            </div>
+        </div>
+        <div class="row">
+            <label for="cnic" class="form-label">CNIC #___________________</label>
+            <div class="row text-end">
+                <label for="cnic" class="form-label">CNIC #___________________</label>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Witness 1:</h3>
+            <div class="row text-end">
+                <h3>Witness 2:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <label for="name" class="form-label">Name ___________________</label>
+            <label for="cnic" class="form-label">CNIC #___________________</label>
+            <label for="Signature" class="form-label">Signature ___________________</label>
+        </div>
+        <div class="row text-end">
+            <label for="name" class="form-label">Name ___________________</label>
+        <label for="cnic" class="form-label">CNIC #___________________</label>
+        <label for="Signature" class="form-label">Signature ___________________</label>
+        </div>
+        <!-- Submit Button -->
+        <div class="text-center">
+            <button type="button" class="btn btn-secondary" onclick="printPreview()">Print Preview</button>
+        </div>
+    </form>
+
+</div>
+<script>
+    function printPreview() {
+        window.print();
+    }
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    const imageInput = document.getElementById('imageInput');
+    const previewImage = document.getElementById('previewImage');
+    function previewSelectedImage() {
+       const file = imageInput.files[0];
+       if (file) {
+          const reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = function(e) {
+             previewImage.src = e.target.result;
+          }
+       }
+    }
+    imageInput.addEventListener('change', previewSelectedImage);
+ </script>
+</body>
+</html>
