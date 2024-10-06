@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIHMS Admission Form</title>
+    <style>
+        /* Previous styles remain the same */
+        /* Adding new styles for declarations */
+        .declaration-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .declaration-title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .declaration-list {
+            list-style-type: decimal;
+            margin-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .declaration-list li {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .signature-block {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .signature-field {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+        }
+
+        .signature-line {
+            border-top: 1px solid #000;
+            margin-top: 50px;
+            position: relative;
+        }
+
+        .signature-label {
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+
+        .date-field {
+            width: 45%;
+        }
+
+        /* Update header style */
+        .institute-header {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Previous form content remains the same -->
+        
+        <!-- Adding Declaration Sections -->
+        <div class="declaration-section">
+            <div class="institute-header">
+                <h2>NATIONAL INSTITUTE OF HEALTH & MANAGEMENT SCIENCES</h2>
+            </div>
+
+            <div class="declaration-title">Declaration by the Applicant</div>
+            <ol class="declaration-list">
+                <li>I declare that all particulars and information given in this application is correct to the best of my knowledge and belief.</li>
+                <li>I understand to abide by all the rules and regulations of the regarding academic program examination and attendance, technical training and discipline.</li>
+                <li>I undertake to accept all the decision of Principal, Managing committee to be final and irrevocable.</li>
+                <li>I declare that I have not been expelled from any institution on disciplinary or academic grounds.</li>
+            </ol>
+
+            <div class="signature-block">
+                <div class="signature-field">
+                    <label>Date:</label>
+                    <input type="date" name="applicant_declaration_date">
+                </div>
+                <div class="signature-field">
+                    <div class="signature-line">
+                        <span class="signature-label">Applicant Signature</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="declaration-title">Declaration by the Parent/Guardian</div>
+            <ol class="declaration-list">
+                <li>I have read and understood the information and declaration given by my child/ward and declare that the information is correct to the best of my knowledge and belief. I hereby undertake to abide by all the provisions of the declaration given by him/her.</li>
+                <li>I will not hold the college responsible for any accident resulting in any kind of injury to my child/ward during his/her stay in the institute or hostel.</li>
+                <li>I have read the institute rules, regulations, information's and responsibility of the parents and hereby undertake to accept to abide by the same in letter and spirit.</li>
+                <li>I will clear any outstanding dues/fee etc. from the institute in which my children/ward(s) is/are studying before the sending of forms for registration or examination.</li>
+                <li>I accept that after admission of my child in the institute, he/she will apply for migration to another institute according to the rules of regulator body.</li>
+                <li>I undertake to claim refund of admission and tuition fee as per institute fee refund policy.</li>
+            </ol>
+
+            <div class="signature-block">
+                <div class="signature-field">
+                    <label>Date:</label>
+                    <input type="date" name="parent_declaration_date">
+                </div>
+                <div class="signature-field">
+                    <div class="signature-line">
+                        <span class="signature-label">Parent's/Guardian's Signature</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
