@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIHMS Admission Form - Complete</title>
+    <style>
+        /* Previous styles remain the same */
+
+        .fee-policy-section {
+            margin: 30px 0;
+        }
+
+        .fee-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .fee-table th, .fee-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .fee-table th {
+            background-color: #f5f5f5;
+        }
+
+        .notes {
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+
+        .notes li {
+            margin-bottom: 5px;
+            list-style-type: none;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .notes li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+        }
+
+        .signature-section {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .signature-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .signature-line {
+            border-top: 1px solid #000;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .input-field {
+            width: 100%;
+            margin: 5px 0;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid #000;
+        }
+
+        .witness-section {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Previous content remains the same -->
+
+        <div class="additional-undertakings">
+            <ol class="undertaking-list" start="9">
+                <li>All such acts and deeds as might bring disgrace and bad name to the institute. In case I am reported to be guilty/involved in any of the aforesaid activities during my stay in this Institute, the institute authorities can remove me from the institute temporarily or expel me permanently. I will not try to create law and order situation or instigate the students of the institute or of any other institution against the action taken by the institute and I will not go to any court of law, in case of my expulsion from institute.</li>
+                <li>I shall pay the tuition fee, exam fee and/or other charges of the college regularly prior to the academic end of the semester or annual.</li>
+                <li>I shall produce the migration certificate within the prescribed period if demanded.</li>
+                <li>Absence from the class without any valid reason/prior permission will result in a fine of Rs. 50/- per day.</li>
+                <li>The institute does not accept any liability or responsibility for any failure or delay in performance due to any cause beyond its control such as fire, natural disaster, power failure, riots, political unrest or acts of public authorities etc.</li>
+            </ol>
+        </div>
+
+        <div class="fee-policy-section">
+            <p><strong>Fee refund policy is under:</strong></p>
+            <table class="fee-table">
+                <tr>
+                    <th>Percentage of "Tuition fee" Refund</th>
+                    <th>Timeline For Semester System</th>
+                    <th>Timeline For Annual System</th>
+                </tr>
+                <tr>
+                    <td>Full Refund (100%)</td>
+                    <td>Up to 07 days of convene of classes</td>
+                    <td>Up to 15 day of convene of classes</td>
+                </tr>
+                <tr>
+                    <td>Half Refund (50%)</td>
+                    <td>From 08 to 15 day of convene of classes</td>
+                    <td>From 16 to 30 days convene of classes</td>
+                </tr>
+                <tr>
+                    <td>No Fee Refund (0%)</td>
+                    <td>From 16 days of convene of classes</td>
+                    <td>From 31 days of convene of classes</td>
+                </tr>
+            </table>
+
+            <ul class="notes">
+                <li>In Case of Cancellation of Admission From any discipline, only Security is refundable.</li>
+                <li>Tuition Fee would be refunded as per the criteria mentioned in the table above.</li>
+                <li>Admission fee once deposited will not be refundable in any case.</li>
+            </ul>
+
+            <p>I will stick to the above mentioned affaire/undertaking of NIHMS Peshawar which will be binding on me and also that I or my said son/daughter/ward would not challenge the expulsion order in any judicial forum. He /She will comply by the rules and regulation of the KMU/Medical Faculty (MT)/Training Hospitals and other Instructions, notified to him by NIHMS, time to time. Violation of the said renders him/her liable to strict disciplinary action such as heavy fine or expulsion from NIHMS or both.</p>
+        </div>
+
+        <div class="signature-section">
+            <div class="signature-group">
+                <div class="signature-line">Signature of the Student</div>
+                <label>Date:</label>
+                <input type="date" class="input-field">
+                <label>CNIC #:</label>
+                <input type="text" class="input-field">
+            </div>
+            <div class="signature-group">
+                <div class="signature-line">Signature of Father/Guardian</div>
+                <label>Date:</label>
+                <input type="date" class="input-field">
+                <label>CNIC #:</label>
+                <input type="text" class="input-field">
+            </div>
+        </div>
+
+        <div class="witness-section">
+            <div class="signature-group">
+                <h4>Witness 1:</h4>
+                <label>Signature:</label>
+                <input type="text" class="input-field">
+                <label>Name:</label>
+                <input type="text" class="input-field">
+                <label>CNIC #:</label>
+                <input type="text" class="input-field">
+            </div>
+            <div class="signature-group">
+                <h4>Witness 2:</h4>
+                <label>Signature:</label>
+                <input type="text" class="input-field">
+                <label>Name:</label>
+                <input type="text" class="input-field">
+                <label>CNIC #:</label>
+                <input type="text" class="input-field">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
